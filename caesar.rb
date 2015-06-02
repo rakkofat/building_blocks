@@ -1,3 +1,8 @@
+# http://www.theodinproject.com/ruby-programming/building-blocks
+# Project 1: Caesar Cipher
+# Implement a caesar cipher that takes in a string and the shift factor and
+# then outputs the modified string.
+
 def caesar_cipher(msg, key)
   key %= 26
   msg.split('').map {|char| encode(char, key)}.join('')
